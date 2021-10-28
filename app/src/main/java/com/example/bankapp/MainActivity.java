@@ -6,7 +6,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,25 +15,8 @@ import android.widget.Toast;
 
 import com.example.bankapp.apiReaders.MainActivityApi;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 public class MainActivity extends AppCompatActivity {
     String currentDate;
@@ -42,9 +24,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView firstWhiteRectIV;
     ImageView secondWhiteRectIV;
     Button enterButton;
-
-    String login;
-    String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SimpleDateFormat")
     private void init() {
+
         // TODO: DELETE
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
