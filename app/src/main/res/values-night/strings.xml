@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="branches_main_window">Главный экран</string>
+    <string name="branches_atms">Отделения и банкоматы</string>
+    <string name="activity_main_worldskills_bank">WorldSkills Bank</string>
+    <string name="row_menu_card_debit_card">Дебетовая карта</string>
+</resources>

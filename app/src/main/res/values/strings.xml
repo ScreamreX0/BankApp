@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BankApp</string>
+    <string name="content_description" />
+
+    <string name="branches_main_window">Главный экран</string>
+    <string name="branches_atms">Отделения и банкоматы</string>
+
+    <string name="activity_main_worldskills_bank">WorldSkills Bank</string>
+    <string name="activity_main_usd">USD</string>
+    <string name="activity_main_eur">EUR</string>
+    <string name="activity_main_enter">Войти</string>
+    <string name="activity_main_atms">Отделения и банкоматы</string>
+    <string name="activity_main_courses">Курсы валют</string>
+    <string name="activity_menu_main">Главный</string>
+    <string name="activity_menu_payment">Платежи</string>
+    <string name="activity_menu_history">История</string>
+    <string name="activity_menu_dialogs">Диалоги</string>
+    <string name="dialog_enter_auth">Авторизация</string>
+    <string name="dialog_enter_your_login_and_password">Введите Ваш логин и пароль</string>
+    <string name="activity_exchange_rates_main_window">Главный экран</string>
+    <string name="activity_exchange_rates_buy">Покупка</string>
+    <string name="activity_exchange_rates_sell">Продажа</string>
+    <string name="row_menu_card_debit_card">Дебетовая карта</string>
+    <string name="row_menu_bank_account_tv_current_account">Текущий счёт</string>
+    <string name="row_menu_credit_tv_cash_credit">Кредит наличными</string>
+    <string name="profile_arrow_right"><![CDATA[>]]></string>
+</resources>
