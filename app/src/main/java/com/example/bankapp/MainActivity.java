@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // TODO: DELETE
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
@@ -40,11 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SimpleDateFormat")
     private void init() {
-
-        // TODO: DELETE
-        Intent intent = new Intent(this, MenuActivity.class);
-        startActivity(intent);
-
         // Отделения и банкоматы
         firstWhiteRectIV = findViewById(R.id.activity_main_iv_first_white_rect);
         firstWhiteRectIV.setOnClickListener(v -> {

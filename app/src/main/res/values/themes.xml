@@ -16,15 +16,15 @@
 
     <style name="DarkToolBar">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">?attr/actionBarSize</item>
-        <item name="background">@color/colorPrimary</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="background">@color/grey_4</item>
         <item name="theme">@style/Theme.AppCompat.DayNight.DarkActionBar</item>
     </style>
 
     <style name="LightToolBar">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">?attr/actionBarSize</item>
-        <item name="background">@color/colorPrimary</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="background">@color/grey_2</item>
         <item name="theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
     </style>
 

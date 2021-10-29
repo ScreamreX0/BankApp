@@ -23,5 +23,10 @@
     <string name="row_menu_card_debit_card">Дебетовая карта</string>
     <string name="row_menu_bank_account_tv_current_account">Текущий счёт</string>
     <string name="row_menu_credit_tv_cash_credit">Кредит наличными</string>
-    <string name="profile_arrow_right"><![CDATA[>]]></string>
+    <string name="arrow_right"><![CDATA[>]]></string>
+    <string name="arrow_left"><![CDATA[<]]></string>
+    <string name="dialog_change_password_changing_password">Изменение пароля</string>
+    <string name="dialog_change_password_enter_new_password">Введите новый пароль</string>
+    <string name="dialog_change_login_changing_login">Изменение логина</string>
+    <string name="dialog_change_login_enter_new_login">Введите новый логин</string>
 </resources>

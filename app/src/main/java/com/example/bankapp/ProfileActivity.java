@@ -1,14 +1,17 @@
 package com.example.bankapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Adapter;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.bankapp.adapters.ProfileSettingsAdapter;
+import com.google.android.material.appbar.AppBarLayout;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -25,6 +28,11 @@ public class ProfileActivity extends AppCompatActivity {
         // AppBar
         TextView full_name = findViewById(R.id.activity_profile_tv_user_full_name);
         full_name.setText(BankVarsAndConstants.userSurname + " " + BankVarsAndConstants.userName);
+
+        findViewById(R.id.activity_profile_tv_back).setOnClickListener(v -> {
+            Intent intent = new Intent(this, MenuActivity.class);
+            startActivity(intent);
+        });
 
         // ListView
         settingRow[] settings = new settingRow[] {

@@ -3,13 +3,16 @@ package com.example.bankapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.bankapp.Interfaces.IMenuItem;
 import com.example.bankapp.adapters.MenuAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 
 public class MenuActivity extends AppCompatActivity {
     @Override
@@ -22,7 +25,16 @@ public class MenuActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void init() {
+        // Bottom navigation view
         BottomNavigationView bottomNavigationView = findViewById(R.id.activity_menu_bnv_bottom_menu);
+
+
+        // Navigation view
+        ImageButton imageButton = findViewById(R.id.activity_menu_iv_profile);
+        imageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
+        });
 
 
         TextView fullname = findViewById(R.id.activity_menu_tv_user_full_name);
