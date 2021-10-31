@@ -27,7 +27,11 @@ public class MenuActivity extends AppCompatActivity {
     private void init() {
         // Bottom navigation view
         BottomNavigationView bottomNavigationView = findViewById(R.id.activity_menu_bnv_bottom_menu);
-
+        ImageButton history = bottomNavigationView.findViewById(R.id.activity_menu_iv_history);
+        history.setOnClickListener(v -> {
+            Intent intent = new Intent(this, HistoryActivity.class);
+            startActivity(intent);
+        });
 
         // Navigation view
         ImageButton imageButton = findViewById(R.id.activity_menu_iv_profile);

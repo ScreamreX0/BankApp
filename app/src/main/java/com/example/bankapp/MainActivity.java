@@ -27,10 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO: DELETE
-        Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();

@@ -10,7 +10,8 @@
         android:id="@+id/activity_profile_action_bar"
         style="@style/LightToolBar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
@@ -35,17 +36,6 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/activity_profile_tv_user_full_name"
-                android:layout_width="232dp"
-                android:layout_height="29dp"
-                android:layout_marginStart="88dp"
-                android:layout_marginTop="12dp"
-                android:gravity="center"
-                android:textSize="20sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
                 android:id="@+id/activity_profile_tv_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,6 +43,12 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/arrow_left"
                 android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:id="@+id/activity_profile_tv_user_full_name"
+                android:layout_width="232dp" android:layout_height="29dp"
+                android:layout_marginStart="88dp" android:layout_marginTop="12dp"
+                android:gravity="center" android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
