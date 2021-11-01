@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.bankapp.apiReaders.MainActivityApi;
+import com.example.bankapp.pojo.BankVarsAndConstants;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // TODO: УБРАТЬ
+        Intent intent = new Intent(this, CardsActivity.class);
+        startActivity(intent);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();

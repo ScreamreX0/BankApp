@@ -3,7 +3,6 @@ package com.example.bankapp.adapters;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,16 +15,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.widget.TintableCheckedTextView;
 
-import com.example.bankapp.BankVarsAndConstants;
+import com.example.bankapp.pojo.BankVarsAndConstants;
 import com.example.bankapp.HistoryActivity;
 import com.example.bankapp.MainActivity;
 import com.example.bankapp.ProfileActivity;
 import com.example.bankapp.R;
 import com.example.bankapp.SertificateActivity;
-
-import java.util.zip.Inflater;
 
 public class ProfileSettingsAdapter extends ArrayAdapter<ProfileActivity.settingRow> {
     Context context;

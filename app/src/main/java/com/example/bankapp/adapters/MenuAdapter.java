@@ -15,6 +15,9 @@ import androidx.annotation.Nullable;
 import com.example.bankapp.Interfaces.IMenuItem;
 import com.example.bankapp.MenuActivity;
 import com.example.bankapp.R;
+import com.example.bankapp.pojo.Accounts;
+import com.example.bankapp.pojo.Cards;
+import com.example.bankapp.pojo.Credits;
 
 public class MenuAdapter extends ArrayAdapter<IMenuItem> {
     Context context;
@@ -42,7 +45,7 @@ public class MenuAdapter extends ArrayAdapter<IMenuItem> {
         if (items[position].getViewType() == CARD) {
             row = layoutInflater.inflate(R.layout.row_menu_card, parent, false);
 
-            MenuActivity.CardRow item = ((MenuActivity.CardRow) items[position]);
+            Cards.BankCard item = ((Cards.BankCard) items[position]);
 
             // НОМЕР КАРТЫ
             ((TextView) row.findViewById(R.id.row_menu_card_tv_card_number)).setText(item.getHideNumber());
@@ -56,7 +59,7 @@ public class MenuAdapter extends ArrayAdapter<IMenuItem> {
         } else if (items[position].getViewType() == BANK_ACCOUNT) {
             row = layoutInflater.inflate(R.layout.row_menu_bank_account, parent, false);
 
-            MenuActivity.BankAccountRow item = ((MenuActivity.BankAccountRow) items[position]);
+            Accounts.BankAccount item = ((Accounts.BankAccount) items[position]);
 
             // НОМЕР СЧЕТА
             ((TextView) row.findViewById(R.id.row_menu_bank_account_tv_current_account)).setText(item.getHideNumber());
@@ -67,7 +70,7 @@ public class MenuAdapter extends ArrayAdapter<IMenuItem> {
         } else if (items[position].getViewType() == CREDIT) {
             row = layoutInflater.inflate(R.layout.row_menu_credit, parent, false);
 
-            MenuActivity.CreditRow item = ((MenuActivity.CreditRow) items[position]);
+            Credits.BankCredit item = ((Credits.BankCredit) items[position]);
 
             // ДАТА ПЛАТЫ
             ((TextView) row.findViewById(R.id.row_menu_credit_tv_date)).setText(item.getPaymentDate());

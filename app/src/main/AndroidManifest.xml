@@ -17,10 +17,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".CardsActivity"
+            android:exported="false" />
+        <activity
             android:name=".SertificateActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".HistoryActivity"
             android:exported="false" />

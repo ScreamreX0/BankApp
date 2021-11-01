@@ -1,17 +1,15 @@
 package com.example.bankapp;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.bankapp.adapters.ProfileSettingsAdapter;
-import com.google.android.material.appbar.AppBarLayout;
+import com.example.bankapp.pojo.BankVarsAndConstants;
 
 public class ProfileActivity extends AppCompatActivity {
 

@@ -31,4 +31,10 @@
     <string name="dialog_change_login_enter_new_login">Введите новый логин</string>
     <string name="sertificate">Пользовательское соглашение</string>
     <string name="made_ruslan">Разработал Ихсанов Руслан Ленарович</string>
+    <string name="hello_world">Hello world</string>
+    <string name="red_btn">Пополнить</string>
+    <string name="transfer">Перевести</string>
+    <string name="block_card">Блокировка карты</string>
+    <string name="AreYouSure">Вы уверены что хотите\n заблокировать карту</string>
+    <string name="password">Пароль</string>
 </resources>

@@ -8,9 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
+import com.example.bankapp.pojo.BankVarsAndConstants;
 
 public class SertificateActivity extends AppCompatActivity {
 

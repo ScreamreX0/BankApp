@@ -9,6 +9,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.bankapp.adapters.HistoryAdapter;
+import com.example.bankapp.pojo.BankVarsAndConstants;
 
 public class HistoryActivity extends AppCompatActivity {
 
