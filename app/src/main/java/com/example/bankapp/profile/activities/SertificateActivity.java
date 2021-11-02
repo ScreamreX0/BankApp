@@ -1,4 +1,4 @@
-package com.example.bankapp;
+package com.example.bankapp.profile.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.bankapp.pojo.BankVarsAndConstants;
+import com.example.bankapp.R;
+import com.example.bankapp._pojo.VarsAndConstants;
 
 public class SertificateActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class SertificateActivity extends AppCompatActivity {
     private void Init() {
         // AppBar
         TextView fullName = findViewById(R.id.activity_sertificate_tv_user_full_name);
-        fullName.setText(BankVarsAndConstants.userSurname + " " + BankVarsAndConstants.userName);
+        fullName.setText(VarsAndConstants.userSurname + " " + VarsAndConstants.userName);
 
         findViewById(R.id.activity_sertificate_tv_back).setOnClickListener(v -> {
             Intent intent = new Intent(this, ProfileActivity.class);

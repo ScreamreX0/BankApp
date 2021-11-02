@@ -1,4 +1,4 @@
-package com.example.bankapp.adapters;
+package com.example.bankapp.profile.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,14 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.bankapp.HistoryActivity;
+import com.example.bankapp._pojo.Items;
 import com.example.bankapp.R;
 
-public class HistoryAdapter extends ArrayAdapter<HistoryActivity.History> {
-    HistoryActivity.History[] histories;
+public class HistoryAdapter extends ArrayAdapter<Items.HistoryItem> {
+    Items.HistoryItem[] histories;
     Context context;
 
-    public HistoryAdapter(@NonNull Context context, HistoryActivity.History[] histories) {
+    public HistoryAdapter(@NonNull Context context, Items.HistoryItem[] histories) {
         super(context, 0, histories);
 
         this.context = context;
@@ -29,7 +29,7 @@ public class HistoryAdapter extends ArrayAdapter<HistoryActivity.History> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.row_history, parent, false);
+        @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.item_history, parent, false);
 
         TextView date = row.findViewById(R.id.row_history_tv_date);
         TextView time = row.findViewById(R.id.row_history_tv_time);

@@ -4,6 +4,14 @@
     package="com.example.bankapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -17,28 +25,28 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name=".CardsActivity"
+            android:name=".menu.activities.CardsActivity"
             android:exported="false" />
         <activity
-            android:name=".SertificateActivity"
-            android:exported="true"></activity>
+            android:name=".profile.activities.SertificateActivity"
+            android:exported="true" />
         <activity
-            android:name=".HistoryActivity"
+            android:name=".menu.activities.HistoryActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".profile.activities.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".menu.activities.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".ExchangeRatesActivity"
+            android:name=".auth.activities.ExchangeRatesActivity"
             android:exported="false" />
         <activity
-            android:name=".BranchesAtmActivity"
+            android:name=".auth.activities.BranchesAtmActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".auth.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

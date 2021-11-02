@@ -1,6 +1,6 @@
-package com.example.bankapp.adapters;
+package com.example.bankapp.auth.adapters;
 
-import static com.example.bankapp.BranchesAtmActivity.addZero;
+import static com.example.bankapp.auth.activities.BranchesAtmActivity.addZero;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,14 +14,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.bankapp.BranchesAtmActivity;
 import com.example.bankapp.R;
+import com.example.bankapp._pojo.Items;
+import com.example.bankapp.auth.activities.BranchesAtmActivity;
 
-public class BranchesAtmAdapter extends ArrayAdapter<BranchesAtmActivity.AtmRow> {
+public class BranchesAtmAdapter extends ArrayAdapter<Items.AtmItem> {
     Context context;
-    BranchesAtmActivity.AtmRow[] atmRows;
+    Items.AtmItem[] atmRows;
 
-    public BranchesAtmAdapter(Context context, BranchesAtmActivity.AtmRow[] atmRows) {
+    public BranchesAtmAdapter(Context context, Items.AtmItem[] atmRows) {
         super(context, R.layout.activity_branches_atm, atmRows);
         this.context = context;
         this.atmRows = atmRows;
@@ -31,7 +32,7 @@ public class BranchesAtmAdapter extends ArrayAdapter<BranchesAtmActivity.AtmRow>
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.row_branches, parent, false);
+        @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.item_branches, parent, false);
 
         // Init
         TextView address = row.findViewById(R.id.row_branches_tv_address);

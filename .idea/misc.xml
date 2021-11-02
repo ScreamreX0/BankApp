@@ -20,11 +20,16 @@
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_exchange_rates.xml" value="0.33" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_history.xml" value="0.5" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_history_tv_back.xml" value="0.3736413043478261" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_login.xml" value="0.360054347826087" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_login_dialog.xml" value="0.3875" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_main2.xml" value="0.360054347826087" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_profile.xml" value="0.38315217391304346" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/activity_sertificate.xml" value="0.33" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/auth/activities/layout/test.xml" value="0.3555253623188406" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/auth/layout/activity_branches_atm.xml" value="0.3555253623188406" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/auth/layout/test.xml" value="0.3555253623188406" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/branches_row.xml" value="0.3875" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/dialog_card_block.xml" value="0.3641304347826087" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/dialog_change_login.xml" value="0.37395833333333334" />
@@ -32,6 +37,7 @@
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/dialog_enter.xml" value="0.3875" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/enter_dialog.xml" value="0.5" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/item_cards_card.xml" value="0.33" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/menu/dialogs/layout/test.xml" value="0.3555253623188406" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/row.xml" value="0.75" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/row_branches.xml" value="0.3875" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/row_card_settings.xml" value="0.5" />
@@ -44,6 +50,8 @@
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/row_menu_header.xml" value="0.3875" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout/row_profile_settings.xml" value="0.38315217391304346" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layout_activities/activity_profile.xml" value="0.3697916666666667" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layouts/auth/layout/activity_test.xml" value="0.23333333333333334" />
+        <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/layouts/auth/layout/test.xml" value="0.3555253623188406" />
         <entry key="..\:/Programming/AndroidStudio/BankApp/app/src/main/res/menu/menu_user_info.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_branches_atm.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3692708333333333" />

@@ -1,4 +1,4 @@
-package com.example.bankapp.adapters;
+package com.example.bankapp.auth.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,15 +12,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.bankapp.ExchangeRatesActivity;
 import com.example.bankapp.R;
+import com.example.bankapp._pojo.Items;
 
-public class ExchangeRatesAdapter extends ArrayAdapter<ExchangeRatesActivity.ExchangeRow> {
+public class ExchangeRatesAdapter extends ArrayAdapter<Items.ExchangeItem> {
     Context context;
-    ExchangeRatesActivity.ExchangeRow[] rowArr;
+    Items.ExchangeItem[] rowArr;
 
-    public ExchangeRatesAdapter(Context context, ExchangeRatesActivity.ExchangeRow[] rowArr) {
-        super(context, R.layout.row_exchanges, rowArr);
+    public ExchangeRatesAdapter(Context context, Items.ExchangeItem[] rowArr) {
+        super(context, R.layout.item_exchanges, rowArr);
         this.context = context;
         this.rowArr = rowArr;
 
@@ -31,7 +31,7 @@ public class ExchangeRatesAdapter extends ArrayAdapter<ExchangeRatesActivity.Exc
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater layoutInflater = (LayoutInflater) context.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.row_exchanges, parent, false);
+        @SuppressLint("ViewHolder") View row = layoutInflater.inflate(R.layout.item_exchanges, parent, false);
 
         // Init
         ImageView flagIV = row.findViewById(R.id.row_exchanges_iv_flag);

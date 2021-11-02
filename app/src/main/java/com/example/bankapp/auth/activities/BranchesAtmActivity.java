@@ -1,4 +1,4 @@
-package com.example.bankapp;
+package com.example.bankapp.auth.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.example.bankapp.adapters.BranchesAtmAdapter;
+import com.example.bankapp.R;
+import com.example.bankapp._pojo.Items;
+import com.example.bankapp.auth.adapters.BranchesAtmAdapter;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -21,7 +23,7 @@ import java.util.Date;
 public class BranchesAtmActivity extends AppCompatActivity {
     ListView mainListView;
     Button mainWindowButton;
-    AtmRow[] atmRows;
+    Items.AtmItem[] atmRows;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,64 +41,22 @@ public class BranchesAtmActivity extends AppCompatActivity {
             startActivity(mainActivity);
         });
 
-        atmRows = new AtmRow[] {
-                new AtmRow("Москва, ул. 50 лет победы д. 3", "Банкомат", 4, 10, 20, 0),
-                new AtmRow("Москва, ул. 30 лет победы д. 4", "Отделение", 4, 10, 20, 0),
-                new AtmRow("Москва, ул. 20 лет победы д. 5", "Банкомат", 8, 20, 18, 30),
-                new AtmRow("Москва, ул. 10 лет победы д. 6", "Отделение", 5, 5, 23, 30),
-                new AtmRow("Москва, ул. 12 лет победы д. 7", "Отделение", 3, 30, 20, 45),
-                new AtmRow("Москва, ул. 35 лет победы д. 8", "Банкомат", 5, 15, 21, 0),
-                new AtmRow("Москва, ул. 40 лет победы д. 9", "Банкомат", 6, 59, 15, 30),
-                new AtmRow("Москва, ул. 40 лет победы д. 10", "Отделение", 10, 15, 23, 0),
-                new AtmRow("Москва, ул. 15 лет победы д. 11", "Банкомат", 3, 5, 19, 50),
-                new AtmRow("Москва, ул. 50 лет победы д. 20", "Отделение", 4, 5, 18, 0)
+        atmRows = new Items.AtmItem[] {
+                new Items.AtmItem("Москва, ул. 50 лет победы д. 3", "Банкомат", 4, 10, 20, 0),
+                new Items.AtmItem("Москва, ул. 30 лет победы д. 4", "Отделение", 4, 10, 20, 0),
+                new Items.AtmItem("Москва, ул. 20 лет победы д. 5", "Банкомат", 8, 20, 18, 30),
+                new Items.AtmItem("Москва, ул. 10 лет победы д. 6", "Отделение", 5, 5, 23, 30),
+                new Items.AtmItem("Москва, ул. 12 лет победы д. 7", "Отделение", 3, 30, 20, 45),
+                new Items.AtmItem("Москва, ул. 35 лет победы д. 8", "Банкомат", 5, 15, 21, 0),
+                new Items.AtmItem("Москва, ул. 40 лет победы д. 9", "Банкомат", 6, 59, 15, 30),
+                new Items.AtmItem("Москва, ул. 40 лет победы д. 10", "Отделение", 10, 15, 23, 0),
+                new Items.AtmItem("Москва, ул. 15 лет победы д. 11", "Банкомат", 3, 5, 19, 50),
+                new Items.AtmItem("Москва, ул. 50 лет победы д. 20", "Отделение", 4, 5, 18, 0)
         };
 
         mainListView = findViewById(R.id.activity_branches_atm_lv_list);
         BranchesAtmAdapter adapter = new BranchesAtmAdapter(this, atmRows);
         mainListView.setAdapter(adapter);
-    }
-
-    public static class AtmRow {
-        String address;
-        String type;
-        int startHour;
-        int startMinute;
-        int endHour;
-        int endMinute;
-
-        public AtmRow(String address, String type, int startHour, int startMinute, int endHour, int endMinute) {
-            this.address = address;
-            this.type = type;
-            this.startHour = startHour;
-            this.startMinute = startMinute;
-            this.endHour = endHour;
-            this.endMinute = endMinute;
-        }
-
-        public String getAddress() {
-            return address;
-        }
-
-        public String getType() {
-            return type;
-        }
-
-        public int getStartHour() {
-            return startHour;
-        }
-
-        public int getStartMinute() {
-            return startMinute;
-        }
-
-        public int getEndHour() {
-            return endHour;
-        }
-
-        public int getEndMinute() {
-            return endMinute;
-        }
     }
 
     public static boolean isWork(int startHour, int startMinute, int endHour, int endMinute) {

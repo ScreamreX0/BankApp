@@ -1,16 +1,16 @@
-package com.example.bankapp;
+package com.example.bankapp.menu.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.bankapp.adapters.CardAdapter;
-import com.example.bankapp.adapters.CardSettingsAdapter;
-import com.example.bankapp.pojo.Cards;
+import com.example.bankapp.R;
+import com.example.bankapp._pojo.VarsAndConstants;
+import com.example.bankapp.menu.adapters.CardAdapter;
+import com.example.bankapp.menu.adapters.CardSettingsAdapter;
 
 public class CardsActivity extends AppCompatActivity {
 
@@ -25,7 +25,7 @@ public class CardsActivity extends AppCompatActivity {
 
     private void Init() {
         // ViewPager2
-        CardAdapter cardAdapter = new CardAdapter(Cards.cards);
+        CardAdapter cardAdapter = new CardAdapter(VarsAndConstants.cards);
         ViewPager2 viewPager2 = findViewById(R.id.activity_cards_view_pager);
 
         viewPager2.setClipToPadding(false);

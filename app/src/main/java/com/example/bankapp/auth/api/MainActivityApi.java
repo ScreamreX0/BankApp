@@ -1,4 +1,4 @@
-package com.example.bankapp.apiReaders;
+package com.example.bankapp.auth.api;
 
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;

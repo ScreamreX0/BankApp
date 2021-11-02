@@ -1,4 +1,4 @@
-package com.example.bankapp;
+package com.example.bankapp.profile.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,11 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.bankapp.adapters.ProfileSettingsAdapter;
-import com.example.bankapp.pojo.BankVarsAndConstants;
+import com.example.bankapp.R;
+import com.example.bankapp._pojo.Items;
+import com.example.bankapp.menu.activities.MenuActivity;
+import com.example.bankapp._pojo.VarsAndConstants;
+import com.example.bankapp.profile.adapters.ProfileSettingsAdapter;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -25,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
     private void init() {
         // AppBar
         TextView full_name = findViewById(R.id.activity_profile_tv_user_full_name);
-        full_name.setText(BankVarsAndConstants.userSurname + " " + BankVarsAndConstants.userName);
+        full_name.setText(VarsAndConstants.userSurname + " " + VarsAndConstants.userName);
 
         findViewById(R.id.activity_profile_tv_back).setOnClickListener(v -> {
             Intent intent = new Intent(this, MenuActivity.class);
@@ -33,27 +36,16 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
         // ListView
-        settingRow[] settings = new settingRow[] {
-                new settingRow("Изменение пароля"),
-                new settingRow("Изменение логина"),
-                new settingRow("История посещений"),
-                new settingRow("Информация о приложении"),
-                new settingRow("Выход")
+        Items.SettingItem[] settings = new Items.SettingItem[] {
+                new Items.SettingItem("Изменение пароля"),
+                new Items.SettingItem("Изменение логина"),
+                new Items.SettingItem("История посещений"),
+                new Items.SettingItem("Информация о приложении"),
+                new Items.SettingItem("Выход")
         };
         ListView listView = findViewById(R.id.activity_profile_lv_main);
         ProfileSettingsAdapter profileSettingsAdapter = new ProfileSettingsAdapter(this, settings);
         listView.setAdapter(profileSettingsAdapter);
     }
 
-    public static class settingRow {
-        String name;
-
-        public settingRow(String name) {
-            this.name = name;
-        }
-
-        public String getName() {
-            return name;
-        }
-    }
 }

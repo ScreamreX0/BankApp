@@ -1,4 +1,4 @@
-package com.example.bankapp;
+package com.example.bankapp.auth.activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +13,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.bankapp.apiReaders.MainActivityApi;
-import com.example.bankapp.pojo.BankVarsAndConstants;
+import com.example.bankapp.auth.api.MainActivityApi;
+import com.example.bankapp.menu.activities.CardsActivity;
+import com.example.bankapp.menu.activities.MenuActivity;
+import com.example.bankapp.R;
+import com.example.bankapp._pojo.VarsAndConstants;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         // TODO: УБРАТЬ
         Intent intent = new Intent(this, CardsActivity.class);
         startActivity(intent);
+
+
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -75,8 +80,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText pass = cl.findViewById(R.id.dialog_enter_p_password);
 
                 if (loginET != null && pass != null) {
-                    if (BankVarsAndConstants.userLogin.contentEquals(loginET.getText()) &&
-                            BankVarsAndConstants.userPassword.contentEquals(pass.getText())) {
+                    if (VarsAndConstants.userLogin.contentEquals(loginET.getText()) &&
+                            VarsAndConstants.userPassword.contentEquals(pass.getText())) {
                         Intent menu = new Intent(this, MenuActivity.class);
                         startActivity(menu);
                     } else {

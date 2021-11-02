@@ -1,4 +1,4 @@
-package com.example.bankapp.adapters;
+package com.example.bankapp.menu.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,14 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.bankapp.R;
-import com.example.bankapp.pojo.Cards;
+import com.example.bankapp._pojo.VarsTemplates;
 
 import java.util.ArrayList;
 
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
-    ArrayList<Cards.BankCard> cards;
+    ArrayList<VarsTemplates.BankCard> cards;
 
-    public CardAdapter(ArrayList<Cards.BankCard> bankCards) {
+    public CardAdapter(ArrayList<VarsTemplates.BankCard> bankCards) {
         this.cards = bankCards;
     }
 
@@ -55,7 +55,6 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
         holder.card_number.setText(cards.get(position).getHideNumber());
         holder.card_money.setText(cards.get(position).getMoney() + " рублей");
         holder.card_image.setImageResource(cards.get(position).getImage());
-
     }
 
     @Override
