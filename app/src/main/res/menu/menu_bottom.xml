@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/activity_main_btn_main"
+        android:icon="@mipmap/ic_home_selected"
+        android:title="@string/main"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/activity_main_btn_payments"
+        android:icon="@mipmap/ic_payments_selected"
+        android:title="@string/payments"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/activity_main_btn_history"
+        android:icon="@mipmap/ic_time_selected"
+        android:title="@string/history"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/activity_main_btn_dialogs"
+        android:icon="@mipmap/ic_message_selected"
+        android:title="@string/dialogs"
+        app:showAsAction="ifRoom" />
+</menu>

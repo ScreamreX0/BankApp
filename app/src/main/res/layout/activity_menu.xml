@@ -44,130 +44,29 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <ListView
-        android:id="@+id/activity_menu_lv_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="80dp" />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/activity_menu_bnv_bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="580dp"
-        android:background="@color/grey">
-
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="132dp"
-                android:layout_marginTop="48dp"
-                android:text="@string/activity_menu_payment"
-                android:textSize="13sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TextContrastCheck" />
-
-            <ImageButton
-                android:id="@+id/activity_menu_iv_main"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="8dp"
-                android:background="@null"
-                android:contentDescription="@string/content_description"
-                android:padding="3dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/ic_home_selected"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="335dp"
-                android:layout_marginTop="48dp"
-                android:text="@string/activity_menu_dialogs"
-                android:textSize="13sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TextContrastCheck" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginTop="50dp"
-                android:text="@string/activity_menu_main"
-                android:textSize="13sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TextContrastCheck" />
-
-            <ImageButton
-                android:id="@+id/activity_menu_iv_dialogs"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="340dp"
-                android:layout_marginTop="8dp"
-                android:background="@null"
-                android:contentDescription="@string/content_description"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/ic_message_selected"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <ImageButton
-                android:id="@+id/activity_menu_iv_history"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="243dp"
-                android:layout_marginTop="8dp"
-                android:background="@null"
-                android:contentDescription="@string/content_description"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/ic_time_selected"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <ImageButton
-                android:id="@+id/activity_menu_iv_payment"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="8dp"
-                android:background="@null"
-                android:contentDescription="@string/content_description"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@mipmap/ic_payments_selected"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="236dp"
-                android:layout_marginTop="48dp"
-                android:text="@string/activity_menu_history"
-                android:textSize="13sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="TextContrastCheck" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@color/grey"
+        app:itemIconTint="@color/purple_200"
+        app:itemTextColor="@color/dark_purple"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/activity_menu_container"
+        android:name="com.bumptech.glide.manager.SupportRequestManagerFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="80dp">
+
+    </FrameLayout>
 
 
 </RelativeLayout>

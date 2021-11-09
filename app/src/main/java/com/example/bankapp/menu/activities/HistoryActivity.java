@@ -9,7 +9,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.bankapp._pojo.Items;
-import com.example.bankapp.profile.activities.ProfileActivity;
 import com.example.bankapp.R;
 import com.example.bankapp.profile.adapters.HistoryAdapter;
 import com.example.bankapp._pojo.VarsAndConstants;
@@ -29,11 +28,6 @@ public class HistoryActivity extends AppCompatActivity {
         // AppBar
         TextView fullName = findViewById(R.id.activity_history_tv_user_full_name);
         fullName.setText(VarsAndConstants.userSurname + " " + VarsAndConstants.userName);
-
-        findViewById(R.id.activity_history_tv_back).setOnClickListener(v -> {
-            Intent intent = new Intent(this, ProfileActivity.class);
-            startActivity(intent);
-        });
 
         // ListView
         ListView listView = findViewById(R.id.activity_history_lv_main);

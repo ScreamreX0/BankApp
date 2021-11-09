@@ -23,15 +23,6 @@ public class SertificateActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     private void Init() {
-        // AppBar
-        TextView fullName = findViewById(R.id.activity_sertificate_tv_user_full_name);
-        fullName.setText(VarsAndConstants.userSurname + " " + VarsAndConstants.userName);
-
-        findViewById(R.id.activity_sertificate_tv_back).setOnClickListener(v -> {
-            Intent intent = new Intent(this, ProfileActivity.class);
-            startActivity(intent);
-        });
-
         // Sertificate
         TextView sertificate = findViewById(R.id.activity_sertificate_link);
         sertificate.setOnClickListener(v -> {

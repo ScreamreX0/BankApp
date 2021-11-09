@@ -32,6 +32,7 @@ public class BranchesAtmActivity extends AppCompatActivity {
 
         //checkPermissions();
         init();
+
     }
 
     private void init() {

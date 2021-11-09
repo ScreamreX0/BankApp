@@ -31,10 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // TODO: УБРАТЬ
-        Intent intent = new Intent(this, CardsActivity.class);
-        startActivity(intent);
 
+        /*// TODO: УБРАТЬ
+        Intent intent = new Intent(this, CardsActivity.class);
+        startActivity(intent);*/
+
+        // TODO: УБРАТЬ
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
 
 
         super.onCreate(savedInstanceState);
